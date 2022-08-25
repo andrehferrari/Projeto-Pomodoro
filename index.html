@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Timer</title>
+    </head>
+    <body>
+        <header>
+            <img src="./assets/timer.png" alt="Timer Icon" class="logo"/>
+            <h1>Pomodoro Timer</h1>
+        </header>
+        
+        <section class="container">
+            <div class="timerConfig">
+                <button class="btn counter">Timer</button>
+                <button class="btn short">Short Break</button>
+                <button class="btn long">Long Break</button>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="limit-section">
+                <button onclick="start()" class="btn start">Iniciar</button>
+                <button onclick="pause()"  class="btn pause">Pausar</button>
+                <button onclick="restart()"  class="btn restart">Recomeçar</button>
+                <h2 id="counter">25:00</h2>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>

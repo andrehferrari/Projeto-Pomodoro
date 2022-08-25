@@ -28,19 +28,15 @@ function restart(){
 
 function timer() {
     seconds--;
-
     if(seconds == 0){
         minutes--;
         seconds = 60;
 
         if(minutes < 0){
-            restart();
-            document.getElementById('counter').innerText = '25:00'
+            alert('The timer is over !!!')
+            return restart();
         };
     };
-
-    var format = 
-    `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-
+    var format = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
     document.getElementById('counter').innerText = format;
 };
